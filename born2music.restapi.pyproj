@@ -1,0 +1,132 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>19d604dd-968e-4d1a-a4ed-bda8e25b5a30</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>rest\restapi.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>born2music.restapi</Name>
+    <RootNamespace>born2music.restapi</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="rest\api\albums\albums.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\albums\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\images\images.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\images\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\entries\entries.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\entries\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\sources\sources.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\sources\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\tracks\tracks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\tracks\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\urischemes\urischemes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\urischemes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\common\errorcodes\restapi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\common\errorcodes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\common\util\jsonutil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\common\util\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\common\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\factory\instancefactory.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\factory\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\api\apiinstancecontroller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\interface\instances.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\interface\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rest\restapi.py" />
+    <Compile Include="rest\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="db\" />
+    <Folder Include="rest\" />
+    <Folder Include="rest\api\" />
+    <Folder Include="rest\api\images\" />
+    <Folder Include="rest\api\entries\" />
+    <Folder Include="rest\api\albums\" />
+    <Folder Include="rest\api\tracks\" />
+    <Folder Include="rest\api\sources\" />
+    <Folder Include="rest\api\urischemes\" />
+    <Folder Include="rest\common\" />
+    <Folder Include="rest\common\errorcodes\" />
+    <Folder Include="rest\common\util\" />
+    <Folder Include="rest\interface\" />
+    <Folder Include="rest\factory\" />
+    <Folder Include="web\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
